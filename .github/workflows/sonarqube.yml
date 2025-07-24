@@ -28,5 +28,7 @@ jobs:
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
-          SONAR_PROJECT_KEY: f38b7fe0e7dc716e5fd41d6aedaf340745bcc9d2
-          SONAR_ORGANIZATION: brendantnn
+        with:
+          args: >
+            -Dsonar.projectKey=f38b7fe0e7dc716e5fd41d6aedaf340745bcc9d2
+            -Dsonar.organization=brendantnn
